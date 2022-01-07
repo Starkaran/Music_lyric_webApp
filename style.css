@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:wght@300;400;700&family=Poppins:wght@600&display=swap');
+
+*{
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0;
+
+
+}
+body{
+    font-family: 'Kalam', cursive;
+    background-color: #161616;
+
+}
+header{
+    background-image: url('./music-app-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: none;
+    width: 100vw;
+    height: 90vh;
+    clip-path: polygon(18% 3%, 80% 13%, 93% 16%, 92% 79%, 74% 83%, 17% 95%, 10% 85%, 9% 8%);
+}
+.container{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.heading{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-align: center;
+
+}
+form{
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background-color: #ffffff;
+    
+}
+button{
+    width: 100px;
+    max-width: 100%;
+    background: #546e7a;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    right: 1px;
+    top: 1px; bottom: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+button:hover{
+    transform: scale(0.96);
+}
+
+.result{
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+
+.song-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.song-list li{
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline; 
+    position: relative;
+}
+
+.song-list li::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background: #e2e5de;
+    display: inline-block;
+}
+.song-list li div{
+    float: left;
+}
+.song-list li span{
+    float: right;
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    border-radius: 12px;
+    color: #161616;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize; 
+}
