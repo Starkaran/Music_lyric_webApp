@@ -127,3 +127,14 @@ button:hover{
     padding: 4px 10px;
     text-transform: capitalize; 
 }
+p{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+@media (max-width:500px){
+    header{
+        width: 100%;
+    }
+    
+    
+}   
