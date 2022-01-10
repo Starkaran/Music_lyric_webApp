@@ -7,7 +7,6 @@
     text-transform: capitalize;
     margin: 0;
 
-
 }
 body{
     font-family: 'Kalam', cursive;
@@ -133,6 +132,25 @@ p{
 }
 @media (max-width:500px){
     header{
+        width: 100%;
+        clip-path: none;
+
+    }
+    .container{
+        width: 70%;
+        font-size: 1rem;
+    }
+    form{
+        width: 100%;
+        font-size: .5rem;
+    }
+    button{
+        width: 30%;
+    }
+    .song-list{
+        width: 80%;
+    }
+    .song-list li{
         width: 100%;
     }
     
